@@ -1,0 +1,5 @@
+# Probleme/ Teme: 
+
+1. Implementati un producer-consumer in care comunicarea sa aiba loc prin intermediul unui canal. Mai sunt necesare alte sincronizari? Daca da, de ce? Daca nu, de ce? (da trebuie sincronziat pt ca altfel accesul la structura nu este thread safe)
+2. **Scrieti un model de Reader-Writer care foloseste ca sharedData un fisier text. De fiecare data cand intra un Writer, pune un mesaj ca a modificat fisierul, iar readerii doar afiseaza continutul fisierului la stdout.** // poate fi data la examen cica lol
+3. Scrieti un model de reader-writer cu un rol nou, cel de "corector". Thread-urile reader doar citesc, cele writer adauga mereu continut nou, iar cele "corector" modifica valoarea/continutul deja existent. Putem avea maxim un writer, maxim un corector, oricati readeri, cu prioritate asupra corectorilor fata de writeri.
